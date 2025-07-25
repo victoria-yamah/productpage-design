@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     background: #b85d5d;
-    cursor: pointer;
+    
 }
 .container{
     display: flex;
@@ -29,6 +29,7 @@ body{
     position: absolute;
     bottom: 30px;
     right: 15px;
+    cursor: pointer;
 }
 #selectors button{
     border: 0;
