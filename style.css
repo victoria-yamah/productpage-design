@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b85d5d;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    width: 700px;
+}
+.left{
+    flex:1;
+    position: relative;
+    transform:scaleY(1.05) ;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+}
+.image{
+    width: 100%;
+}
+#selectors{
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+}
+#selectors button{
+    border: 0;
+    outline: 0;
+    width: 10px;
+    display: block;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #222;
+    margin-bottom: 10px;
+   
+}
+#selectors .active{
+    background-color:rgb(72, 72, 197);
+    
+}
+.right{
+    flex:1;
+    background: #222;
+    padding: 50px 30px 0;
+    color:#fff;
+    
+}
+#name{
+    font-size: 40px;
+}
+#price{
+    margin-bottom: 5px;
+}
+#discount{
+    color:rgb(72, 72, 197); 
+    margin-bottom: 20px;
+}
+#info{
+    margin-bottom: 30px;
+    line-height: 1.3rem;
+    font-size: 18px;
+}
+.specifications{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+#size {
+    display: flex;
+   
+}
+#size p{
+    width: 70px;
+}
+
+#size input:checked +span{
+    color: blue;
+    font-weight: 600;
+}
+#size input{
+    display: none;
+}
+#size span{
+    margin-right: 20px;
+}
+
+#color{
+    display: flex;
+    
+}
+#color p{
+    width: 70px;
+}
+#colors{
+    display: flex;
+    width: 70%;
+    
+}
+#colors label span{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right:20px;
+
+}
+.ball1{
+    background-color: red;
+}
+.ball2{
+    background-color: green;
+}
+.ball4{
+    background-color: cyan;
+}
+.ball3{
+    background-color: pink;
+   
+}
+#colors input{
+    display: none;
+}
+#colors input:checked +span{
+    transform: scale(0.8);
+    box-shadow: 0 0 0 4px #222, 0 0 0 6px #000;
+}
+
+#quantity{
+    display: flex;
+   
+}
+#quantity p{
+    width: 70px;
+}
+#quantity input{
+    border-radius: 4px;
+    width: 40px;
+    outline: 0;
+    padding-left: 4px;
+}
+#buy{
+    width: 100%;
+    background: rgb(72, 72, 197);
+    padding: 10px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 35px;
+    color:#fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 40px;
+}
